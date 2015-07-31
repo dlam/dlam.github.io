@@ -1,0 +1,23 @@
+html, body {
+  height: 3000px;
+  background-color: #f1eed9;
+  margin: 0;
+}
+
+#navBar {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  left: 0;
+  background-color: #58351a;
+  transition: width 500ms;
+  z-index: 100;
+}
+
+#mainContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 50px;
+  background-color: #f7edbf;
+}
