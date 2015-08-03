@@ -1,34 +1,57 @@
 html, body {
   height: 3000px;
-  background-color: #f1f1f1;
+  background-color: #F1F1F1;
   font-family: 'PT Sans', sans-serif;
-  color: #1c140d;
+  color: #1C140D;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navBar {
   height: 100%;
-  width: 75px;
+  width: 70px;
   position: fixed;
   left: 0;
-  background-color: #cbe86b;
-  border-right: 3px solid #1c140d;
+  background-color: #F38630;
+  border-right: 3px solid #FA6900;
   transition: width 500ms;
   -webkit-transition: width 500ms;
   z-index: 100;
 }
 
 .navBar ul {
+  height: 100%;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
-  padding: 1em;
+  padding: 0;
 }
 
-#mainContainer {
+.navBar ul li {
+  height: 70px;
+  width: 250px;
+}
+
+.navButton img {
+  height: 20px;
+  width: 20px;
+  margin: 25px;
+  vertical-align: middle;
+}
+
+.navButton span {
+  height: 100%;
+  width: 250px;
+  line-height: 20px;
+}
+
+.mainContainer {
   height: 100%;
   width: 100%;
   position: relative;
-  left: 0;
-  background-color: #ffffff;
+  left: 73px;
+  background-color: #A7DBD8;
 }

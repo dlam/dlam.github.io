@@ -6,6 +6,6 @@ window.onload = function() {
   };
 
   navBar.onmouseleave = function(event) {
-    this.style.width = '75px';
+    this.style.width = '70px';
   }
 }
