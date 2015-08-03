@@ -58,9 +58,30 @@ a {
   text-align: center;
 }
 
+.articleContainer {
+  height: 420px;
+  width: 320px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.article {
+  height: 400px;
+  width: 300px;
+  background-color: #E0E4CC;
+  margin: 20px 10px 0;
+  transition: box-shadow 300ms, margin-top 300ms;
+  -webkit-transition: box-shadow 300ms, margin-top 300ms;
+}
+
+.article:hover {
+  box-shadow: 1px 1px 10px #1C140D;
+  margin-top: 10px;
+}
+
 .linkContainer {
   height: 40px;
-  padding-top: 50%;
+  padding-top: 1em;
 }
 
 .linkContainer img {
