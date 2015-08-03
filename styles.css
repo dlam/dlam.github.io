@@ -51,9 +51,10 @@ a {
 .mainContainer {
   height: 100%;
   width: 100%;
-  position: relative;
-  left: 73px;
   background-color: #A7DBD8;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 73px;
   text-align: center;
 }
 
@@ -68,5 +69,5 @@ a {
 }
 
 .linkContainer img:hover {
-  opacity: 0.4;
+  opacity: 0.5;
 }
