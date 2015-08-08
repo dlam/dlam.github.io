@@ -37,6 +37,11 @@ a {
 .navBar ul li {
   height: 70px;
   width: 250px;
+  cursor: pointer;
+}
+
+.navBar ul li:hover {
+  background-color: #FA6900;
 }
 
 .navButton img {
@@ -58,8 +63,7 @@ a {
   background-color: #A7DBD8;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 73px;
-  text-align: center;
+  padding: 0 10px 10px 83px;
 }
 
 .articleContainer {
@@ -79,13 +83,14 @@ a {
 }
 
 .article:hover {
-  box-shadow: 1px 1px 10px #1C140D;
+  box-shadow: 0 3px 7px #4d5964;
   margin-top: 10px;
 }
 
 .linkContainer {
   height: 40px;
   padding-top: 1em;
+  text-align: center;
 }
 
 .linkContainer img {
