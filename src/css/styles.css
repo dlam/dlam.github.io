@@ -22,6 +22,10 @@ a {
   z-index: 100;
 }
 
+.navBar:hover {
+  width: 200px;
+}
+
 .navBar ul {
   height: 100%;
   list-style-type: none;
