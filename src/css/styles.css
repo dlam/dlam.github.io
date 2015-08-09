@@ -1,7 +1,17 @@
+/**
+ * Palette
+ * -------
+ * #181818
+ * #455860
+ * #5e6f76
+ * #ffffff
+ */
+
 html, body {
   height: 3000px;
   background-color: #f1f1f1;
   font-family: 'Cabin', sans-serif;
+  font-size: 14px;
   color: #455860;
   margin: 0;
 }
@@ -15,12 +25,12 @@ a {
   width: 70px;
   position: fixed;
   left: 0;
-  background-color: #455860;
+  background-color: #5e6f76;
   border-right: 3px solid #181818;
   color: #181818;
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 500;
   transition: width 300ms;
   -webkit-transition: width 300ms;
   z-index: 100;
@@ -45,7 +55,7 @@ a {
 }
 
 .navBar ul li:hover {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .navButton img {
@@ -64,7 +74,7 @@ a {
 .mainContainer {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 10px 10px 83px;
@@ -80,7 +90,7 @@ a {
 .article {
   height: 350px;
   width: 250px;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer;
   margin: 20px 10px 0;
   transition: box-shadow 300ms, margin-top 300ms;
@@ -88,7 +98,7 @@ a {
 }
 
 .article:hover {
-  box-shadow: 0 3px 7px #4d5964;
+  box-shadow: 0 3px 7px #5e6f76;
   margin-top: 10px;
 }
 
@@ -110,7 +120,6 @@ a {
 
 .article .articleContent {
   padding: 5px;
-  font-size: 14px;
 }
 
 .linkContainer {

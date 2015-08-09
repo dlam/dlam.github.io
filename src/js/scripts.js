@@ -14,18 +14,19 @@ window.onload = function() {
 
         mainContainer.innerHTML +=
           '<div class="articleContainer">' +
-          '<div class="article">' +
-          '<img src="' +
-          articleImg +
-          '"></img>' +
-          '<div class="articleContentContainer">' +
-          '<div class="articleTitle">' +
-          articleTitle +
-          '</div>' +
-          '<div class="articleContent">' +
-          articleContent +
-          '</div>' +
-          '</div>' +
+            '<div class="article">' +
+              '<img src="' +
+                articleImg +
+              '"></img>' +
+            '<div class="articleContentContainer">' +
+              '<div class="articleTitle">' +
+                articleTitle +
+              '</div>' +
+              '<div class="articleContent">' +
+                articleContent +
+              '</div>' +
+              '<div class="readMore">Read More</div>' +
+            '</div>' +
           '</div>';
       }
     }
