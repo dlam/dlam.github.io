@@ -1,4 +1,8 @@
 module.exports = function(grunt) {
+
+  var generateContentData = require('./grunt/content-data-generator.js');
+
+  // Project config
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
@@ -13,6 +17,8 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.registerTask('default', ['uglify']);
+
+  grunt.registerTask('build-content-data', function() { generateContentData.call(this, grunt); });
+  grunt.registerTask('default', ['build-content-data', 'uglify']);
 };
 
