@@ -10,9 +10,11 @@ window.onload = function() {
       for (var i = 0; i < content.length; i++) {
         var articleHeader =
           '<div class="articleContainer">' +
-          '<div class="article">';
+          '<div class="article">' +
+          '<img src="res/img/sample.jpg">';
         var articleContent = content[i].title;
         var articleFooter =
+          '</img>' +
           '</div>' +
           '</div>';
 

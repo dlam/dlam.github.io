@@ -67,15 +67,15 @@ a {
 }
 
 .articleContainer {
-  height: 420px;
-  width: 320px;
+  height: 370px;
+  width: 270px;
   display: inline-block;
   overflow: hidden;
 }
 
 .article {
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  width: 250px;
   background-color: #E0E4CC;
   cursor: pointer;
   margin: 20px 10px 0;
@@ -86,6 +86,11 @@ a {
 .article:hover {
   box-shadow: 0 3px 7px #4d5964;
   margin-top: 10px;
+}
+
+.article img {
+  height: 150px;
+  width: 100%;
 }
 
 .linkContainer {
