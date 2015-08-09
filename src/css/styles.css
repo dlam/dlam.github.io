@@ -1,8 +1,8 @@
 html, body {
   height: 3000px;
-  background-color: #F1F1F1;
-  font-family: 'PT Sans', sans-serif;
-  color: #1C140D;
+  background-color: #f1f1f1;
+  font-family: 'Cabin', sans-serif;
+  color: #121310;
   margin: 0;
 }
 
@@ -15,8 +15,11 @@ a {
   width: 70px;
   position: fixed;
   left: 0;
-  background-color: #F38630;
-  border-right: 3px solid #FA6900;
+  background-color: #6FB7E9;
+  border-right: 3px solid #3C8DC5;
+  font-family: 'Raleyway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
   transition: width 300ms;
   -webkit-transition: width 300ms;
   z-index: 100;
@@ -41,7 +44,7 @@ a {
 }
 
 .navBar ul li:hover {
-  background-color: #FA6900;
+  background-color: #3C8DC5;
 }
 
 .navButton img {
@@ -60,7 +63,7 @@ a {
 .mainContainer {
   height: 100%;
   width: 100%;
-  background-color: #A7DBD8;
+  background-color: #E9F2F9;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 10px 10px 83px;
@@ -76,7 +79,7 @@ a {
 .article {
   height: 350px;
   width: 250px;
-  background-color: #E0E4CC;
+  background-color: #fff;
   cursor: pointer;
   margin: 20px 10px 0;
   transition: box-shadow 300ms, margin-top 300ms;
@@ -93,9 +96,25 @@ a {
   width: 100%;
 }
 
+.article .articleContentContainer {
+  padding: 5px;
+}
+
+.article .articleTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.article .articleContent {
+  padding: 5px;
+  font-size: 14px;
+}
+
 .linkContainer {
   height: 40px;
-  padding-top: 1em;
+  padding-top: 10px;
   text-align: center;
 }
 

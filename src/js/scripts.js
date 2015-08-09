@@ -8,7 +8,7 @@ window.onload = function() {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
       var content = JSON.parse(xmlHttp.responseText);
       for (var i = 0; i < content.length; i++) {
-        var articleImg = 'res/img/sample.jpg';
+        var articleImg = 'http://orig14.deviantart.net/d109/f/2015/011/e/f/a_few_mountains_ghibli_style_by_tyleredlinart-d55xn04.jpg';
         var articleTitle = content[i].title;
         var articleContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
@@ -18,11 +18,13 @@ window.onload = function() {
           '<img src="' +
           articleImg +
           '"></img>' +
+          '<div class="articleContentContainer">' +
           '<div class="articleTitle">' +
           articleTitle +
           '</div>' +
           '<div class="articleContent">' +
           articleContent +
+          '</div>' +
           '</div>' +
           '</div>';
       }
