@@ -1,4 +1,45 @@
 window.onload = function() {
+  var navLinks = document.querySelectorAll('.navBar li');
+  navLinks[0].onmouseenter = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_menu_hover.svg';
+  };
+
+  navLinks[0].onmouseleave = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_menu.svg';
+  };
+
+  navLinks[1].onmouseenter = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_home_hover.svg';
+  };
+
+  navLinks[1].onmouseleave = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_home.svg';
+  };
+
+  navLinks[2].onmouseenter = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_about_hover.svg';
+  };
+
+  navLinks[2].onmouseleave = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_about.svg';
+  };
+
+  navLinks[3].onmouseenter = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_blog_hover.svg';
+  };
+
+  navLinks[3].onmouseleave = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_blog.svg';
+  };
+
+  navLinks[4].onmouseenter = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_projects_hover.svg';
+  };
+
+  navLinks[4].onmouseleave = function(e) {
+    e.srcElement.querySelector('img').src = './res/img/icon_projects.svg';
+  };
+
   var mainContainer = document.querySelector('.mainContainer');
 
   var xmlHttp = new XMLHttpRequest();
@@ -18,14 +59,14 @@ window.onload = function() {
               '<img src="' +
                 articleImg +
               '"></img>' +
-            '<div class="articleContentContainer">' +
-              '<div class="articleTitle">' +
+            '<div class="contentContainer">' +
+              '<div class="title">' +
                 articleTitle +
               '</div>' +
-              '<div class="articleContent">' +
+              '<div class="date">3 days ago</div>' +
+              '<div class="content">' +
                 articleContent +
               '</div>' +
-              '<div class="readMore">Read More</div>' +
             '</div>' +
           '</div>';
       }
