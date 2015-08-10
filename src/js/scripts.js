@@ -1,4 +1,5 @@
 window.onload = function() {
+  // TODO(dustin): Abstract this into a navLink class.
   var navLinks = document.querySelectorAll('.navBar li');
   navLinks[0].onmouseenter = function(e) {
     e.srcElement.querySelector('img').src = './res/img/icon_menu_hover.svg';
@@ -49,9 +50,10 @@ window.onload = function() {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
       var content = JSON.parse(xmlHttp.responseText);
       for (var i = 0; i < content.length; i++) {
-        var articleImg = 'http://orig14.deviantart.net/d109/f/2015/011/e/f/a_few_mountains_ghibli_style_by_tyleredlinart-d55xn04.jpg';
         var articleTitle = content[i].title;
-        var articleContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+        var articleContent = content[i].content;
+        var articleImg = content[i].image;
+        var articleDate = Date.now() / 1000 - parseInt(content[i].date);
 
         mainContainer.innerHTML +=
           '<div class="articleContainer">' +
@@ -63,7 +65,9 @@ window.onload = function() {
               '<div class="title">' +
                 articleTitle +
               '</div>' +
-              '<div class="date">3 days ago</div>' +
+              '<div class="date">' +
+                articleDate +
+              '</div>' +
               '<div class="content">' +
                 articleContent +
               '</div>' +
