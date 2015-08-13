@@ -37,7 +37,7 @@ window.onload = function() {
         var timeStamp;
         if (days >= 7) {
           var now = new Date();
-          timeStamp = now.getMonth() + '/' + now.getDate() + '/' + now.getFullYear();
+          timeStamp = articleDate.getMonth() + '/' + articleDate.getDate() + '/' + articleDate.getFullYear();
         } else if (days !== 0) {
           timeStamp = days + ' days ago';
         } else if (hours !== 0) {
