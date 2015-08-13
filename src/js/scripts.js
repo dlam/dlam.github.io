@@ -1,45 +1,17 @@
+// TODO(dustin): Generate this dynamically via Grunt.
+MENU_LINKS = [
+  'menu',
+  'home',
+  'about',
+  'blog',
+  'projects'
+]
+
 window.onload = function() {
-  // TODO(dustin): Abstract this into a navLink class.
   var navLinks = document.querySelectorAll('.navBar li');
-  navLinks[0].onmouseenter = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_menu_hover.svg';
-  };
-
-  navLinks[0].onmouseleave = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_menu.svg';
-  };
-
-  navLinks[1].onmouseenter = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_home_hover.svg';
-  };
-
-  navLinks[1].onmouseleave = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_home.svg';
-  };
-
-  navLinks[2].onmouseenter = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_about_hover.svg';
-  };
-
-  navLinks[2].onmouseleave = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_about.svg';
-  };
-
-  navLinks[3].onmouseenter = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_blog_hover.svg';
-  };
-
-  navLinks[3].onmouseleave = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_blog.svg';
-  };
-
-  navLinks[4].onmouseenter = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_projects_hover.svg';
-  };
-
-  navLinks[4].onmouseleave = function(e) {
-    e.srcElement.querySelector('img').src = './res/img/icon_projects.svg';
-  };
+  for (var i = 0; i < navLinks.length; i++) {
+    NavLink(navLinks[i], './res/img/icon_' + MENU_LINKS[i] +'.svg', './res/img/icon_' + MENU_LINKS[i] + '_hover.svg');
+  }
 
   var mainContainer = document.querySelector('.mainContainer');
 
@@ -50,6 +22,7 @@ window.onload = function() {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
       var content = JSON.parse(xmlHttp.responseText);
       for (var i = 0; i < content.length; i++) {
+        // TODO(dustin): Abstract this into its own class.
         var articleTitle = content[i].title;
         var articleContent = content[i].content;
         var articleImg = content[i].image;
