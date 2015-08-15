@@ -1,12 +1,16 @@
 function NavLink(element, iconPath, iconHoverPath) {
-  var img = element.querySelector('img');
-  img.src = iconPath;
+  this.element = element;
+  this.iconPath = iconPath;
+  this.iconHoverPath = iconHoverPath;
 
-  element.onmouseenter = function() {
-    img.src = iconHoverPath;
-  };
+  this.render = function() {
+    var img = this.element.querySelector('img');
+    element.onmouseenter = function() {
+      img.src = iconHoverPath;
+    };
 
-  element.onmouseleave = function() {
-    img.src = iconPath;
+    element.onmouseleave = function() {
+      img.src = iconPath;
+    };
   };
 }

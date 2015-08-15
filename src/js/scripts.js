@@ -10,7 +10,8 @@ MENU_LINKS = [
 window.onload = function() {
   var navLinks = document.querySelectorAll('.navBar li');
   for (var i = 0; i < navLinks.length; i++) {
-    NavLink(navLinks[i], './res/img/icon_' + MENU_LINKS[i] +'.svg', './res/img/icon_' + MENU_LINKS[i] + '_hover.svg');
+    var navLink = new NavLink(navLinks[i], './res/img/icon_' + MENU_LINKS[i] +'.svg', './res/img/icon_' + MENU_LINKS[i] + '_hover.svg');
+    navLink.render();
   }
 
   var mainContainer = document.querySelector('.mainContainer');
