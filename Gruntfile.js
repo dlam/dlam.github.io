@@ -13,12 +13,18 @@ module.exports = function(grunt) {
         src: 'src/js/*.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
+    },
+    jshint: {
+      app: {
+        src: ['src/js/*.js']
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask('build-content-data', function() { generateContentData.call(this, grunt); });
-  grunt.registerTask('default', ['build-content-data', 'uglify']);
+  grunt.registerTask('default', ['build-content-data', 'jshint', 'uglify']);
 };
 

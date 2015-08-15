@@ -5,7 +5,7 @@ MENU_LINKS = [
   'about',
   'blog',
   'projects'
-]
+];
 
 window.onload = function() {
   var navLinks = document.querySelectorAll('.navBar li');
@@ -31,4 +31,4 @@ window.onload = function() {
 
   xmlHttp.open("GET", url, true);
   xmlHttp.send();
-}
+};
