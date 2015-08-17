@@ -1,16 +1,8 @@
-// TODO(dustin): Generate this dynamically via Grunt.
-MENU_LINKS = [
-  'menu',
-  'home',
-  'about',
-  'blog',
-  'projects'
-];
 
 window.onload = function() {
-  var navLinks = document.querySelectorAll('.navBar li');
-  for (var i = 0; i < navLinks.length; i++) {
-    var navLink = new NavLink(navLinks[i], './res/img/icon_' + MENU_LINKS[i] +'.svg', './res/img/icon_' + MENU_LINKS[i] + '_hover.svg');
+  var navBar = document.querySelector('.navBar ul');
+  for (var i = 0; i < MENU_LINKS.length; i++) {
+    var navLink = new NavLink(navBar, i);
     navLink.render();
   }
 

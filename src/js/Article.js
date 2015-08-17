@@ -1,5 +1,5 @@
-function Article(parentContainer, json) {
-  this.parentContainer = parentContainer;
+function Article(parentElement, json) {
+  this.parentElement = parentElement;
 
   var articleTitle = json.title;
   var articleContent = json.content;
@@ -29,7 +29,8 @@ function Article(parentContainer, json) {
       timeStamp = 'Just now';
     }
 
-    this.parentContainer.innerHTML +=
+    // TODO(dustin): Use document.createElement.
+    this.parentElement.innerHTML +=
       '<div class="articleContainer">' +
       '<div class="article">' +
       '<img src="' +
