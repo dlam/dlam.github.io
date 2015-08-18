@@ -1,11 +1,4 @@
-
 window.onload = function() {
-  var navBar = document.querySelector('.navBar ul');
-  for (var i = 0; i < MENU_LINKS.length; i++) {
-    var navLink = new NavLink(navBar, i);
-    navLink.render();
-  }
-
   var mainContainer = document.querySelector('.mainContainer');
 
   var xmlHttp = new XMLHttpRequest();
