@@ -1,52 +1,52 @@
 function Article(parentElement, json) {
   this.parentElement = parentElement;
 
-  var articleTitle = json.title;
-  var articleContent = json.content;
-  var articleImg = json.image;
-  var articleDate = new Date(parseInt(json.date));
+  this.articleTitle = json.title;
+  this.articleContent = json.content;
+  this.articleImg = json.image;
+  this.articleDate = new Date(parseInt(json.date));
 
-  var timeDifference = Math.floor(Date.now() - articleDate.valueOf());
-  var seconds = Math.floor(timeDifference / 1000);
-  var minutes = Math.floor(seconds / 60);
-  var hours = Math.floor(minutes / 60);
-  var days = Math.floor(hours / 24);
-
-  this.render = function() {
-    var timeStamp;
-    if (days >= 7) {
-      var now = new Date();
-      timeStamp = articleDate.getMonth() + '/' + articleDate.getDate() + '/' + articleDate.getFullYear();
-    } else if (days !== 0) {
-      timeStamp = days + ' days ago';
-    } else if (hours !== 0) {
-      timeStamp = hours + ' hours ago';
-    } else if (minutes !== 0) {
-      timeStamp = minutes + ' minutes ago';
-    } else if (seconds !== 0) {
-      timeStamp = seconds + ' seconds ago';
-    } else {
-      timeStamp = 'Just now';
-    }
-
-    // TODO(dustin): Use document.createElement.
-    this.parentElement.innerHTML +=
-      '<div class="articleContainer">' +
-      '<div class="article">' +
-      '<img src="' +
-      articleImg +
-      '"></img>' +
-      '<div class="contentContainer">' +
-      '<div class="title">' +
-      articleTitle +
-      '</div>' +
-      '<div class="date">' +
-      timeStamp +
-      '</div>' +
-      '<div class="content">' +
-      articleContent +
-      '</div>' +
-      '</div>' +
-      '</div>';
-  };
+  this.timeDifference = Math.floor(Date.now() - this.articleDate.valueOf());
+  this.seconds = Math.floor(this.timeDifference / 1000);
+  this.minutes = Math.floor(this.seconds / 60);
+  this.hours = Math.floor(this.minutes / 60);
+  this.days = Math.floor(this.hours / 24);
 }
+
+Article.prototype.render = function() {
+  var timeStamp;
+  if (this.days >= 7) {
+    var now = new Date();
+    timeStamp = this.articleDate.getMonth() + '/' + this.articleDate.getDate() + '/' + this.articleDate.getFullYear();
+  } else if (this.days !== 0) {
+    timeStamp = this.days + ' days ago';
+  } else if (this.hours !== 0) {
+    timeStamp = this.hours + ' hours ago';
+  } else if (this.minutes !== 0) {
+    timeStamp = this.minutes + ' minutes ago';
+  } else if (this.seconds !== 0) {
+    timeStamp = this.seconds + ' seconds ago';
+  } else {
+    timeStamp = 'Just now';
+  }
+
+  // TODO(dustin): Use document.createElement.
+  this.parentElement.innerHTML +=
+    '<div class="articleContainer">' +
+    '<div class="article">' +
+    '<img src="' +
+    this.articleImg +
+    '"></img>' +
+    '<div class="contentContainer">' +
+    '<div class="title">' +
+    this.articleTitle +
+    '</div>' +
+    '<div class="date">' +
+    timeStamp +
+    '</div>' +
+    '<div class="content">' +
+    this.articleContent +
+    '</div>' +
+    '</div>' +
+    '</div>';
+};
