@@ -1,4 +1,4 @@
-function Article(parentElement, json) {
+var Article = function(parentElement, json) {
   this.parentElement = parentElement;
 
   this.articleTitle = json.title;
@@ -11,7 +11,7 @@ function Article(parentElement, json) {
   this.minutes = Math.floor(this.seconds / 60);
   this.hours = Math.floor(this.minutes / 60);
   this.days = Math.floor(this.hours / 24);
-}
+};
 
 Article.prototype.render = function() {
   var timeStamp;
