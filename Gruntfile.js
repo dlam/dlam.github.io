@@ -6,12 +6,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
       build: {
         src: 'src/js/*.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+        dest: 'build/src/<%= pkg.name %>.min.js'
       }
     },
     jshint: {
@@ -38,13 +35,24 @@ module.exports = function(grunt) {
         // Environments
         browser: true
       }
+    },
+    webfont: {
+      icons: {
+        src: 'res/fonts/material-icons/*.svg',
+        dest: 'build/res/fonts',
+        destCss: 'build/src',
+        options: {
+          font: 'material-icons'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-webfont');
 
   grunt.registerTask('build-content-data', function() { generateContentData.call(this, grunt); });
-  grunt.registerTask('default', ['build-content-data', 'jshint', 'uglify']);
+  grunt.registerTask('default', ['build-content-data', 'webfont', 'jshint', 'uglify']);
 };
 
