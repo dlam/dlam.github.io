@@ -5,12 +5,14 @@ module.exports = function(grunt) {
   // Project config
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     uglify: {
       build: {
         src: 'src/js/*.js',
         dest: 'build/src/<%= pkg.name %>.min.js'
       }
     },
+
     jshint: {
       app: {
         src: ['src/js/*.js']
@@ -36,6 +38,9 @@ module.exports = function(grunt) {
         browser: true
       }
     },
+
+    clean: ['build'],
+
     webfont: {
       icons: {
         src: 'res/fonts/material-icons/*.svg',
@@ -50,9 +55,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-webfont');
 
   grunt.registerTask('build-content-data', function() { generateContentData.call(this, grunt); });
-  grunt.registerTask('default', ['build-content-data', 'webfont', 'jshint', 'uglify']);
+  grunt.registerTask('default', ['clean', 'build-content-data', 'webfont', 'jshint', 'uglify']);
 };
 
