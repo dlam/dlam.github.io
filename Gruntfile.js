@@ -17,6 +17,26 @@ module.exports = function(grunt) {
     jshint: {
       app: {
         src: ['src/js/*.js']
+      },
+      options: {
+        // Enforcing options
+        curly: true,
+        eqeqeq: true,
+        forin: true,
+        freeze: true,
+        futurehostile: true,
+        latedef: true,
+        noarg: true,
+        nocomma: true,
+        nonbsp: true,
+        nonew: true,
+        singleGroups: true,
+        // TODO(dustin): Think of a nice way to add "use strict".
+        // strict: true,
+        undef: true,
+        unused: true,
+        // Environments
+        browser: true
       }
     }
   });

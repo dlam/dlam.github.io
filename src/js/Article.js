@@ -16,7 +16,6 @@ var Article = function(parentElement, json) {
 Article.prototype.render = function() {
   var timeStamp;
   if (this.days >= 7) {
-    var now = new Date();
     timeStamp = this.articleDate.getMonth() + '/' + this.articleDate.getDate() + '/' + this.articleDate.getFullYear();
   } else if (this.days !== 0) {
     timeStamp = this.days + ' days ago';

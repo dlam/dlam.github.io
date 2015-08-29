@@ -1,3 +1,5 @@
+/* global Article */
+
 window.onload = function() {
   var mainContainer = document.querySelector('.mainContainer');
 
