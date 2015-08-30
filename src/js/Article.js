@@ -31,7 +31,6 @@ Article.prototype.render = function() {
 
   // TODO(dustin): Use document.createElement.
   this.parentElement.innerHTML +=
-    '<div class="articleContainer">' +
     '<div class="article">' +
     '<img src="' +
     this.articleImg +
@@ -45,7 +44,6 @@ Article.prototype.render = function() {
     '</div>' +
     '<div class="content">' +
     this.articleContent +
-    '</div>' +
     '</div>' +
     '</div>';
 };
