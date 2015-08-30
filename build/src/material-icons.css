@@ -3,10 +3,10 @@
 
 @font-face {
 	font-family:"material-icons";
-	src:url("../res/fonts/material-icons.eot?999843774228bd220fe9d511590ee525");
+	src:url("../res/fonts/material-icons.eot");
 	src:url("../res/fonts/material-icons.eot?#iefix") format("embedded-opentype"),
-		url("../res/fonts/material-icons.woff?999843774228bd220fe9d511590ee525") format("woff"),
-		url("../res/fonts/material-icons.ttf?999843774228bd220fe9d511590ee525") format("truetype");
+		url("../res/fonts/material-icons.woff") format("woff"),
+		url("../res/fonts/material-icons.ttf") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 }
