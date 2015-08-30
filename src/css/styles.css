@@ -102,7 +102,7 @@ a {
   transition: transform 300ms;
   -moz-transition: transform 300ms;
   -o-transition: transform 300ms;
-  -webkit-transition: transform 300ms;
+  -webkit-transition: -webkit-transform 300ms;
   white-space: normal;
 }
 
@@ -117,11 +117,13 @@ a {
   transition: box-shadow 300ms, transform 300ms;
   -moz-transition: box-shadow 300ms, transform 300ms;
   -o-transition: box-shadow 300ms, transform 300ms;
-  -webkit-transition: box-shadow 300ms, transform 300ms;
+  -webkit-transition: -webkit-box-shadow 300ms, -webkit-transform 300ms;
 }
 
 .article:hover {
   box-shadow: 0 3px 7px #5e6f76;
+  -moz-box-shadow: 0 3px 7px #5e6f76;
+  -webkit-box-shadow: 0 3px 7px #5e6f76;
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
 }
