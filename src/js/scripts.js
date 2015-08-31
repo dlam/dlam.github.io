@@ -2,6 +2,8 @@
 /* global NavLink */
 /* global SiteNavigator */
 
+/* exported siteNavigator */
+
 // TODO(dustin): Investigate the best way to do globals.
 var siteNavigator = new SiteNavigator(window);
 

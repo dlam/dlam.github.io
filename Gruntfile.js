@@ -6,6 +6,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    clean: ['build'],
+
     uglify: {
       build: {
         src: 'src/js/*.js',
@@ -39,8 +41,6 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['build'],
-
     webfont: {
       icons: {
         src: 'res/fonts/material-icons/*.svg',
@@ -61,6 +61,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-webfont');
 
   grunt.registerTask('build-content-data', function() { generateContentData.call(this, grunt); });
-  grunt.registerTask('default', ['clean', 'build-content-data', 'webfont', 'jshint', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'clean', 'build-content-data', 'webfont', 'uglify']);
 };
 

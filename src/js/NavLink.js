@@ -1,3 +1,5 @@
+/* global siteNavigator */
+
 var NavLink = function(parentElement, label, icon, destination) {
   this.parentElement = parentElement;
   this.label = label;
