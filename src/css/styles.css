@@ -46,7 +46,7 @@ a {
   z-index: 100;
 }
 
-.navBar:hover ~ .mainContainer{
+.navBar:hover ~ .mainContainer {
   transform: translateX(130px);
   -webkit-transform: translateX(130px);
 }

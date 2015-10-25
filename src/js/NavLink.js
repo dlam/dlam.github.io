@@ -1,13 +1,12 @@
 /* global siteNavigator */
 
-var NavLink = function(parentElement, label, icon, destination) {
+var NavLink = function(parentElement, label, icon, path) {
   this.parentElement = parentElement;
   this.label = label;
   this.icon = icon;
-  this.destination = destination;
+  this.path = path;
 };
 
-// TODO(dustin): Use document.createElement.
 NavLink.prototype.render = function() {
   var element = document.createElement('li');
   element.className = 'navButton';
@@ -25,7 +24,7 @@ NavLink.prototype.render = function() {
 
   var _this = this;
   element.onmousedown = function() {
-    siteNavigator.navigateTo(_this.destination);
+    siteNavigator.navigateTo(_this.path);
   };
 };
 

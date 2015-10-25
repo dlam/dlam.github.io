@@ -1,5 +1,7 @@
 /* global Article */
+/* global NavBar */
 /* global NavLink */
+/* global Page */
 /* global SiteNavigator */
 
 /* exported siteNavigator */
@@ -8,15 +10,18 @@
 var siteNavigator = new SiteNavigator(window);
 
 window.onload = function() {
-  // TODO(dustin): Put this into NavBar.render().
-  var navContainer = document.querySelector('.navBar ul');
-  new NavLink(navContainer, 'MENU', 'icon_menu', 'menu').render();
-  new NavLink(navContainer, 'HOME', 'icon_home', '/').render();
-  new NavLink(navContainer, 'ABOUT', 'icon_account', 'about').render();
-  new NavLink(navContainer, 'BLOG', 'icon_pen', 'blog').render();
-  new NavLink(navContainer, 'PROJECTS', 'icon_code-tags', 'projects').render();
-
+  var bodyContainer = document.querySelector('.body');
+  var navContainer = document.querySelector('.navBar');
   var mainContainer = document.querySelector('.mainContainer');
+
+  var navPages = [];
+  navPages[0] = new Page('MENU', 'icon_menu', '?page=menu');
+  navPages[1] = new Page('HOME', 'icon_home', '/');
+  navPages[2] = new Page('ABOUT', 'icon_account', '?page=about');
+  navPages[3] = new Page('BLOG', 'icon_pen', '?page=blog');
+  navPages[4] = new Page('PROJECTS', 'icon_code-tags', '?page=projects');
+  new NavBar(navContainer, navPages).render();
+
 
   // Business logic for loading Articles.
   var xmlHttp = new XMLHttpRequest();
@@ -35,3 +40,4 @@ window.onload = function() {
   xmlHttp.open("GET", url, true);
   xmlHttp.send();
 };
+
