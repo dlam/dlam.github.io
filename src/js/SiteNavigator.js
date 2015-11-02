@@ -3,7 +3,8 @@ var SiteNavigator = function(win) {
 };
 
 SiteNavigator.prototype.navigateTo = function(page) {
-  this.win.history.pushState(null, 'Dustin Lam - ' + page, page);
+  this.win.history.pushState(null, 'Dustin Lam - ' + page.label, page.path);
+  page.loadHandler();
 };
 
 // SiteNavigator.prototype.goBack = function() {};

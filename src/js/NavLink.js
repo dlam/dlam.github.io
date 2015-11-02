@@ -1,10 +1,8 @@
 /* global siteNavigator */
 
-var NavLink = function(parentElement, label, icon, path) {
+var NavLink = function(parentElement, page) {
   this.parentElement = parentElement;
-  this.label = label;
-  this.icon = icon;
-  this.path = path;
+  this.page = page;
 };
 
 NavLink.prototype.render = function() {
@@ -12,11 +10,11 @@ NavLink.prototype.render = function() {
   element.className = 'navButton';
 
   var iconElement = document.createElement('i');
-  iconElement.className = 'icon ' + this.icon;
+  iconElement.className = 'icon ' + this.page.icon;
 
   var labelElement = document.createElement('span');
   labelElement.className = 'label';
-  labelElement.textContent = this.label;
+  labelElement.textContent = this.page.label;
 
   element.appendChild(iconElement);
   element.appendChild(labelElement);
@@ -24,7 +22,7 @@ NavLink.prototype.render = function() {
 
   var _this = this;
   element.onmousedown = function() {
-    siteNavigator.navigateTo(_this.path);
+    siteNavigator.navigateTo(_this.page);
   };
 };
 
