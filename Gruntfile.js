@@ -47,7 +47,9 @@ module.exports = function(grunt) {
         dest: 'build/res/fonts',
         destCss: 'build/src',
         options: {
+          engine: 'node',
           font: 'material-icons',
+          fontHeight: '24',
           // TODO(dustin): Re-enable this after enabling incremental builds.
           hashes: false,
         }
