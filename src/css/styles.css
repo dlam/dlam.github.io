@@ -154,14 +154,14 @@ a {
 
 .linkContainer {
   height: 20px;
-  padding-top: 10px;
+  padding: 10px;
   text-align: center;
 }
 
 .linkContainer i {
   height: 20px;
   width: 20px;
-  color: #181818;
+  color: #f1f1f1;
   font-size: 20px;
   transition: opacity 300ms;
   -webkit-transition: opacity 300ms;
