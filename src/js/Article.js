@@ -29,21 +29,33 @@ Article.prototype.render = function() {
     timeStamp = 'Just now';
   }
 
-  // TODO(dustin): Use document.createElement.
-  this.parentElement.innerHTML +=
-    '<div class="article">' +
-    '<img src="' +
-    this.articleImg +
-    '"></img>' +
-    '<div class="contentContainer">' +
-    '<div class="title">' +
-    this.articleTitle +
-    '</div>' +
-    '<div class="date">' +
-    timeStamp +
-    '</div>' +
-    '<div class="content">' +
-    this.articleContent +
-    '</div>' +
-    '</div>';
+  var element = document.createElement('div');
+  element.className = 'article';
+
+  var articleImg = document.createElement('img');
+  articleImg.src = this.articleImg;
+
+  var contentContainer = document.createElement('div');
+  contentContainer.className = 'contentContainer';
+
+  var articleTitle = document.createElement('div');
+  articleTitle.className = 'title';
+  articleTitle.textContent = this.articleTitle;
+
+  var articleDate = document.createElement('div');
+  articleDate.className = 'date';
+  articleDate.textContent = timeStamp;
+
+  var articleContent = document.createElement('div');
+  articleContent.className = 'content';
+  articleContent.textContent = this.articleContent;
+
+  contentContainer.appendChild(articleTitle);
+  contentContainer.appendChild(articleDate);
+  contentContainer.appendChild(articleContent);
+
+  element.appendChild(articleImg);
+  element.appendChild(contentContainer);
+
+  this.parentElement.appendChild(element);
 };
