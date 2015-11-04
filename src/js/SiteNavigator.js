@@ -1,5 +1,6 @@
 /* exported SiteNavigator */
 
+// TODO(dustin): Store the pages in here to add functionality to navigate to pages at will.
 var SiteNavigator = function(win) {
   this.win = win;
 };
