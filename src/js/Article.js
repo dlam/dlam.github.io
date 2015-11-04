@@ -1,3 +1,5 @@
+/* exported Article */
+
 var Article = function(parentElement, json) {
   this.parentElement = parentElement;
 

@@ -1,3 +1,5 @@
+/* exported SiteNavigator */
+
 var SiteNavigator = function(win) {
   this.win = win;
 };

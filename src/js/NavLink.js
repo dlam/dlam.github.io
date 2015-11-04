@@ -1,3 +1,4 @@
+/* exported NavLink */
 /* global siteNavigator */
 
 var NavLink = function(parentElement, page) {

@@ -1,7 +1,7 @@
-/* global Article */
-/* global NavBar */
-/* global Page */
-/* global SiteNavigator */
+/* global Article: false */
+/* global NavBar: false */
+/* global Page: false */
+/* global SiteNavigator: false */
 
 /* exported siteNavigator */
 

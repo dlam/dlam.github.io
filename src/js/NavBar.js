@@ -1,4 +1,6 @@
-/* global NavLink */
+/* exported NavBar */
+
+/* global NavLink: false */
 
 var NavBar = function(parentElement, pages) {
   this.parentElement = parentElement;
