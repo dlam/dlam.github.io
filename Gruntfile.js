@@ -50,7 +50,7 @@ module.exports = function(grunt) {
           engine: 'node',
           normalize: true,
           font: 'material-icons',
-          fontHeight: '24',
+          fontHeight: '512',
           // TODO(dustin): Re-enable this after enabling incremental builds.
           hashes: false,
         }
