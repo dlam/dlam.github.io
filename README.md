@@ -3,10 +3,10 @@ Personal website and blog
 
 ## Build
 ```
-brew install ttfautohint fontforge --with-python
+brew install ttfautohint
 npm install
+grunt
 ```
 
 ## Dependencies
-[FontForge](http://fontforge.github.io/)
 [ttfautohint](http://www.freetype.org/ttfautohint/)
