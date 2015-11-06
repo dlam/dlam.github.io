@@ -4,6 +4,7 @@ Personal website and blog
 ## Build
 ```
 brew install ttfautohint
+npm install -g grunt-cli
 npm install
 grunt
 ```
