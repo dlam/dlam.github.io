@@ -14,7 +14,7 @@ window.onload = function() {
 
   // Logic to render NavBar.
   var navPages = [];
-  navPages[0] = new Page('MENU', 'icon_menu', '?page=menu', function () {
+  navPages[0] = new Page('MENU', 'icon_menu', '/', function () {
     mainContainer.innerHTML = '';
   });
 
@@ -26,7 +26,9 @@ window.onload = function() {
     mainContainer.innerHTML = '';
   });
 
+  // TODO(dustin): Wrap Article load logic into a helper.
   navPages[3] = new Page('BLOG', 'icon_pen', '?page=blog', function () {
+    // TODO(dustin): Replace this poor performant refresh with document fragments.
     mainContainer.innerHTML = '';
 
     // Business logic for loading Articles.
@@ -48,6 +50,7 @@ window.onload = function() {
   });
 
   navPages[4] = new Page('PROJECTS', 'icon_code-tags', '?page=projects', function () {
+    // TODO(dustin): Replace this poor performant refresh with document fragments.
     mainContainer.innerHTML = '';
 
     // Business logic for loading Articles.
