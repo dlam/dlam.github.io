@@ -1,7 +1,7 @@
 /* exported NavLink */
-/* global siteNavigator */
 
-var NavLink = function(parentElement, page) {
+var NavLink = function(siteNavigator, parentElement, page) {
+  this.siteNavigator = siteNavigator;
   this.parentElement = parentElement;
   this.page = page;
 };
@@ -23,7 +23,7 @@ NavLink.prototype.render = function() {
 
   var _this = this;
   element.onmousedown = function() {
-    siteNavigator.navigateTo(_this.page);
+    _this.siteNavigator.navigateTo(_this.page);
   };
 };
 

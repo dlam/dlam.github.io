@@ -1,75 +1,11 @@
-/* global Article: false */
 /* global NavBar: false */
-/* global Page: false */
 /* global SiteNavigator: false */
-
-/* exported siteNavigator */
-
-// TODO(dustin): Investigate the best way to do globals.
-var siteNavigator = new SiteNavigator(window);
 
 window.onload = function() {
   var navContainer = document.querySelector('.navBar');
   var mainContainer = document.querySelector('.mainContainer');
-
-  // Logic to render NavBar.
-  var navPages = [];
-  navPages[0] = new Page('MENU', 'icon_menu', '/', function () {
-    mainContainer.innerHTML = '';
-  });
-
-  navPages[1] = new Page('HOME', 'icon_home', '/', function () {
-    mainContainer.innerHTML = '';
-  });
-
-  navPages[2] = new Page('ABOUT', 'icon_account', '?page=about', function () {
-    mainContainer.innerHTML = '';
-  });
-
-  // TODO(dustin): Wrap Article load logic into a helper.
-  navPages[3] = new Page('BLOG', 'icon_pen', '?page=blog', function () {
-    // TODO(dustin): Replace this poor performant refresh with document fragments.
-    mainContainer.innerHTML = '';
-
-    // Business logic for loading Articles.
-    var xmlHttp = new XMLHttpRequest();
-    var url = 'res/docs/blog/content.json';
-
-    xmlHttp.onreadystatechange = function() {
-      if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-        var content = JSON.parse(xmlHttp.responseText);
-        for (var i = 0; i < content.length; i++) {
-          var article = new Article(mainContainer, content[i]);
-          article.render();
-        }
-      }
-    };
-
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send();
-  });
-
-  navPages[4] = new Page('PROJECTS', 'icon_code-tags', '?page=projects', function () {
-    // TODO(dustin): Replace this poor performant refresh with document fragments.
-    mainContainer.innerHTML = '';
-
-    // Business logic for loading Articles.
-    var xmlHttp = new XMLHttpRequest();
-    var url = 'res/docs/blog/content.json';
-
-    xmlHttp.onreadystatechange = function() {
-      if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-        var content = JSON.parse(xmlHttp.responseText);
-        for (var i = 0; i < content.length; i++) {
-          var article = new Article(mainContainer, content[i]);
-          article.render();
-        }
-      }
-    };
-
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send();
-  });
-  new NavBar(navContainer, navPages).render();
+  var siteNavigator = new SiteNavigator(window, mainContainer);
+  new NavBar(navContainer, siteNavigator).render();
+  siteNavigator.onLoad();
 };
 
