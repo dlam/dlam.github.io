@@ -81,13 +81,16 @@ SiteNavigator.prototype.navigateTo = function(page) {
 // SiteNavigator.prototype.goForward = function() {};
 
 SiteNavigator.prototype.onLoad = function() {
-  // TODO(dustin): We are gonna need chemo for this cancer.
-  var opts = this.win.location.search;
-  opts = opts.substring(1, opts.length - 1);
-  opts = opts.split('&');
+  var optRegExp = new RegExp(/([a-z]+)=([a-z]+)/i);
+  var optRegExpResult = optRegExp.exec(this.win.location.search);
+  var opts = [];
+  for (var i = 1; i * 2 < optRegExpResult.length; i++) {
+    opts[optRegExpResult[i * 2 - 1]] = optRegExpResult[i * 2];
+  }
 
+  // TODO(dustin): We are gonna need chemo for this cancer.
   var page;
-  switch(opts[0].split('=')[1]) {
+  switch(opts.page) {
     case 'home':
       page = this.navPages[1];
       break;
@@ -105,6 +108,6 @@ SiteNavigator.prototype.onLoad = function() {
       break;
   }
 
-  this.navigateTo(page);
+  page.loadHandler(this.mainContainer);
 };
 
