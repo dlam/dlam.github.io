@@ -1,0 +1,27 @@
+/**
+ * Palette
+ * -------
+ * #181818
+ * #455860
+ * #5e6f76
+ * #f1f1f1
+ * #ffffff
+ */
+
+.MainContainer {
+  height: 100%;
+  width: calc(100% - 70px);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 10px;
+  transition: transform 300ms;
+  -moz-transition: transform 300ms;
+  -o-transition: transform 300ms;
+  -webkit-transition: -webkit-transform 300ms;
+  white-space: normal;
+}

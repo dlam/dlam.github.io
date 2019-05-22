@@ -1,0 +1,13 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #f1f1f1;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  color: #455860;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
