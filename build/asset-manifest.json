@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.54975b9c.chunk.css",
-    "main.js": "/static/js/main.34ec95f3.chunk.js",
-    "main.js.map": "/static/js/main.34ec95f3.chunk.js.map",
+    "main.js": "/static/js/main.fb8041b4.chunk.js",
+    "main.js.map": "/static/js/main.fb8041b4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1b468275.js",
     "runtime-main.js.map": "/static/js/runtime-main.1b468275.js.map",
     "static/js/2.ef3f4861.chunk.js": "/static/js/2.ef3f4861.chunk.js",
     "static/js/2.ef3f4861.chunk.js.map": "/static/js/2.ef3f4861.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0b898ffb6624f3e015c4e83dfc8156c1.js": "/precache-manifest.0b898ffb6624f3e015c4e83dfc8156c1.js",
+    "precache-manifest.e8f9c1391bc4fa2535707340a53d9903.js": "/precache-manifest.e8f9c1391bc4fa2535707340a53d9903.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.54975b9c.chunk.css.map": "/static/css/main.54975b9c.chunk.css.map",
     "static/media/account.svg": "/static/media/account.41089b2f.svg",
@@ -19,13 +19,13 @@
     "static/media/icon_twitter.svg": "/static/media/icon_twitter.98fbad94.svg",
     "static/media/menu.svg": "/static/media/menu.fe6be280.svg",
     "static/media/pen.svg": "/static/media/pen.7bb49de9.svg",
-    "static/media/talk1.png": "/static/media/talk1.b474443d.png",
-    "static/media/talk2.png": "/static/media/talk2.a3c7bf30.png"
+    "static/media/talk1.png": "/static/media/talk1.3480e592.png",
+    "static/media/talk2.png": "/static/media/talk2.c07dff77.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1b468275.js",
     "static/js/2.ef3f4861.chunk.js",
     "static/css/main.54975b9c.chunk.css",
-    "static/js/main.34ec95f3.chunk.js"
+    "static/js/main.fb8041b4.chunk.js"
   ]
 }
