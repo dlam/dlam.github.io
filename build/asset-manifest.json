@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.24cc6769.chunk.css",
-    "main.js": "/static/js/main.2dfec396.chunk.js",
-    "main.js.map": "/static/js/main.2dfec396.chunk.js.map",
+    "main.css": "/static/css/main.54975b9c.chunk.css",
+    "main.js": "/static/js/main.bcd028e0.chunk.js",
+    "main.js.map": "/static/js/main.bcd028e0.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.3310f33a.chunk.js": "/static/js/2.3310f33a.chunk.js",
     "static/js/2.3310f33a.chunk.js.map": "/static/js/2.3310f33a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f5f9612a3542e9061e331e436c21d334.js": "/precache-manifest.f5f9612a3542e9061e331e436c21d334.js",
+    "precache-manifest.ba431b7197127da379b1845c2f8cf894.js": "/precache-manifest.ba431b7197127da379b1845c2f8cf894.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.24cc6769.chunk.css.map": "/static/css/main.24cc6769.chunk.css.map",
-    "static/media/account.41089b2f.svg": "/static/media/account.41089b2f.svg",
-    "static/media/code-tags.c30c2138.svg": "/static/media/code-tags.c30c2138.svg",
-    "static/media/home.0c07127c.svg": "/static/media/home.0c07127c.svg",
-    "static/media/icon_github.0b4bec49.svg": "/static/media/icon_github.0b4bec49.svg",
-    "static/media/icon_linkedin.1becc951.svg": "/static/media/icon_linkedin.1becc951.svg",
-    "static/media/icon_twitter.98fbad94.svg": "/static/media/icon_twitter.98fbad94.svg",
-    "static/media/menu.fe6be280.svg": "/static/media/menu.fe6be280.svg",
-    "static/media/pen.7bb49de9.svg": "/static/media/pen.7bb49de9.svg"
+    "static/css/main.54975b9c.chunk.css.map": "/static/css/main.54975b9c.chunk.css.map",
+    "static/media/account.svg": "/static/media/account.41089b2f.svg",
+    "static/media/code-tags.svg": "/static/media/code-tags.c30c2138.svg",
+    "static/media/home.svg": "/static/media/home.0c07127c.svg",
+    "static/media/icon_github.svg": "/static/media/icon_github.0b4bec49.svg",
+    "static/media/icon_linkedin.svg": "/static/media/icon_linkedin.1becc951.svg",
+    "static/media/icon_twitter.svg": "/static/media/icon_twitter.98fbad94.svg",
+    "static/media/menu.svg": "/static/media/menu.fe6be280.svg",
+    "static/media/pen.svg": "/static/media/pen.7bb49de9.svg",
+    "static/media/talk1.png": "/static/media/talk1.cf00a4d0.png",
+    "static/media/talk2.png": "/static/media/talk2.88c996ad.png"
   }
 }
