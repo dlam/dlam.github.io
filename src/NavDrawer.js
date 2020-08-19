@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './NavDrawer.css';
 
 import NavLinks from './NavLinks';
@@ -9,7 +10,7 @@ import { ReactComponent as TalksIcon } from './res/account.svg';
 import { ReactComponent as BlogIcon } from './res/pen.svg';
 import { ReactComponent as ProjectsIcon } from './res/code-tags.svg';
 
-function NavDrawer() {
+function NavDrawer({ state, dispatch }) {
   return (
     <div className="NavDrawer">
       <NavLinks/>
@@ -18,19 +19,19 @@ function NavDrawer() {
           <MenuIcon className="icon"/>
           <span className="label">MENU</span>
         </li>
-        <li className="NavButton">
+        <li className="NavButton" onClick={() => dispatch({ type: "HOME" })}>
           <HomeIcon className="icon"/>
           <span className="label">HOME</span>
         </li>
-        <li className="NavButton">
+        <li className="NavButton" onClick={() => dispatch({ type: "TALKS" })}>
           <TalksIcon className="icon"/>
           <span className="label">TALKS</span>
         </li>
-        <li className="NavButton">
+        <li className="NavButton" onClick={() => dispatch({ type: "BLOG" })}>
           <BlogIcon className="icon"/>
           <span className="label">BLOG</span>
         </li>
-        <li className="NavButton">
+        <li className="NavButton" onClick={() => dispatch({ type: "PROJECTS" })}>
           <ProjectsIcon className="icon"/>
           <span className="label">PROJECTS</span>
         </li>
@@ -39,4 +40,4 @@ function NavDrawer() {
   );
 }
 
-export default NavDrawer;
+export default connect()(NavDrawer);

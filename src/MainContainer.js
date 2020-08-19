@@ -1,25 +1,30 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './MainContainer.css';
 
 import Article from './Article';
 
-function MainContainer() {
+function mapStateToProps(state) {
+  return {
+    state: state
+  };
+}
+
+function MainContainer({ state, dispatch }) {
   return (
     <div className="MainContainer">
-      <Article
-        url="https://www.youtube.com/watch?v=ynBPcFs6OOk"
-        img="talk2.png"
-        title="Fighting Regressions with Benchmarks in CI"
-        date="October 2019"
-        content="Android Dev Summit '19, Sunnyvale, CA" />
-      <Article
-        url="https://www.youtube.com/watch?v=ZffMCJdA5Qc"
-        img="talk1.png"
-        title="Improving App Performance with Benchmarking"
-        date="May 2019"
-        content="Google I/O '19, Mountain View, CA" />
+      {
+        state.map(article => (
+          <Article
+            url={article.url}
+            img={article.img}
+            title={article.title}
+            date={article.date}
+            content={article.content} />
+        ))
+      }
     </div>
   );
 }
 
-export default MainContainer;
+export default connect(mapStateToProps)(MainContainer);
