@@ -1,18 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import ReactGA from 'react-ga';
-import { Provider } from 'react-redux';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import ReactGA from 'react-ga'
+import { Provider } from 'react-redux'
+import { Action, createStore, Reducer } from 'redux'
+import App from './App'
+import Article from './Article'
+import './index.css'
+import * as serviceWorker from './serviceWorker'
 
-import { createStore } from 'redux';
+ReactGA.initialize('UA-44768148-1')
+ReactGA.pageview(window.location.pathname + window.location.search)
 
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-ReactGA.initialize('UA-44768148-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
-const talks = [
+const talks: Article[] = [
   {
     "url": "https://www.youtube.com/watch?v=yszRpGp3ijI",
     "img": "talk2.png",
@@ -28,38 +27,39 @@ const talks = [
     "content": "Android Dev Summit '19, Sunnyvale, CA"
   },
   {
-    "url":"https://www.youtube.com/watch?v=ZffMCJdA5Qc",
-    "img":"talk1.png",
-    "title":"Improving App Performance with Benchmarking",
-    "date":"May 2019",
-    "content":"Google I/O '19, Mountain View, CA"
+    "url": "https://www.youtube.com/watch?v=ZffMCJdA5Qc",
+    "img": "talk1.png",
+    "title": "Improving App Performance with Benchmarking",
+    "date": "May 2019",
+    "content": "Google I/O '19, Mountain View, CA"
   }
-];
+]
 
 // TODO(dustin): Move this into its own file.
-const store = createStore((state, action) => {
+const reducer: Reducer<Article[], Action<string>> = (state, action): Article[] => {
   switch (action.type) {
     case "HOME":
-      return [];
+      return []
     case "TALKS":
-      return talks;
+      return talks
     case "BLOG":
-      return [];
+      return []
     case "PROJECTS":
-      return [];
+      return []
     default:
-      return state;
+      return state!
   }
-}, talks);
+}
+const store = createStore(reducer, talks)
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById("root")
-);
+)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.unregister()
