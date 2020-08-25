@@ -12,7 +12,6 @@ class NavDrawer extends PureComponent<DispatchProp> {
   render(): ReactNode {
     return (
       <div className="NavDrawer">
-        <NavLinks />
         <ul>
           <li className="NavButton">
             <MenuIcon className="icon" />
@@ -34,6 +33,7 @@ class NavDrawer extends PureComponent<DispatchProp> {
             <ProjectsIcon className="icon" />
             <span className="label">PROJECTS</span>
           </li>
+          <NavLinks />
         </ul>
       </div>
     )
