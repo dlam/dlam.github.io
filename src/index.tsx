@@ -55,8 +55,6 @@ const podcasts: Article[] = [
 // TODO(dustin): Move this into its own file.
 const reducer: Reducer<Article[], Action<string>> = (state, action): Article[] => {
   switch (action.type) {
-    case "HOME":
-      return []
     case "TALKS":
       return talks
     case "PODCASTS":

@@ -4,7 +4,6 @@ import './NavDrawer.css'
 import NavLinks from './NavLinks'
 import { ReactComponent as TalksIcon } from './res/talks.svg'
 import { ReactComponent as BlogIcon } from './res/pen.svg'
-import { ReactComponent as HomeIcon } from './res/home.svg'
 import { ReactComponent as MenuIcon } from './res/menu.svg'
 import { ReactComponent as PodcastsIcon } from './res/podcasts.svg'
 
@@ -16,10 +15,6 @@ class NavDrawer extends PureComponent<DispatchProp> {
           <li className="NavButton">
             <MenuIcon className="icon" />
             <span className="label">MENU</span>
-          </li>
-          <li className="NavButton" onClick={() => this.props.dispatch({ type: "HOME" })}>
-            <HomeIcon className="icon" />
-            <span className="label">HOME</span>
           </li>
           <li className="NavButton" onClick={() => this.props.dispatch({ type: "TALKS" })}>
             <TalksIcon className="icon" />
