@@ -35,6 +35,23 @@ const talks: Article[] = [
   }
 ]
 
+const podcasts: Article[] = [
+  {
+    "url": "http://androidbackstage.blogspot.com/2020/10/episode-151-paging3.html",
+    "img": "podcast2.png",
+    "title": "ADB Episode 151: Paging3",
+    "date": "October 2020",
+    "content": "Romain and Chet talked with Dustin Lam and Chris Craik from the Toolkit team about Paging3"
+  },
+  {
+    "url": "http://androidbackstage.blogspot.com/2019/09/episode-121-benchmarking.html",
+    "img": "podcast1.jpg",
+    "title": "ADB Episode 121: Benchmarking",
+    "date": "September 2019",
+    "content": "In this episode, we chat with Chris Craik and Dustin Lam from the AndroidX team about benchmarking"
+  },
+]
+
 // TODO(dustin): Move this into its own file.
 const reducer: Reducer<Article[], Action<string>> = (state, action): Article[] => {
   switch (action.type) {
@@ -42,9 +59,9 @@ const reducer: Reducer<Article[], Action<string>> = (state, action): Article[] =
       return []
     case "TALKS":
       return talks
+    case "PODCASTS":
+      return podcasts
     case "BLOG":
-      return []
-    case "PROJECTS":
       return []
     default:
       return state!
