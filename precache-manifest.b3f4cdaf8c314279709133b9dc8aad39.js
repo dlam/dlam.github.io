@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4dfc419b2d935f65e3daa5536de4e401",
+    "revision": "5158379a00edfb5c108e86d30f623a5e",
     "url": "/index.html"
   },
   {
-    "revision": "ff08babab9238adc538d",
+    "revision": "8470634c88116d8878b2",
     "url": "/static/css/main.694fe129.chunk.css"
   },
   {
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.c1a079ba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ff08babab9238adc538d",
-    "url": "/static/js/main.cbcb1e3f.chunk.js"
+    "revision": "8470634c88116d8878b2",
+    "url": "/static/js/main.05b19129.chunk.js"
   },
   {
     "revision": "1235ce8c86e3d7b3b73c",
     "url": "/static/js/runtime-main.547873b7.js"
-  },
-  {
-    "revision": "41089b2f99d519db70b323937dad7bab",
-    "url": "/static/media/account.41089b2f.svg"
   },
   {
     "revision": "c30c213863edfb05f2a4af85f778e994",
@@ -56,11 +52,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pen.7bb49de9.svg"
   },
   {
+    "revision": "7663d4b5d875f8af5bb45f7e6084042c",
+    "url": "/static/media/podcast1.7663d4b5.jpg"
+  },
+  {
+    "revision": "cc532e2efc6d02815e399a935efd2723",
+    "url": "/static/media/podcast2.cc532e2e.png"
+  },
+  {
+    "revision": "58e127e9bbf25d744397d99ec9630df5",
+    "url": "/static/media/podcasts.58e127e9.svg"
+  },
+  {
     "revision": "3480e592575d645569d0036cad5ba8ae",
     "url": "/static/media/talk1.3480e592.png"
   },
   {
     "revision": "c07dff779dccb9abc5bddb6827d1b1ba",
     "url": "/static/media/talk2.c07dff77.png"
+  },
+  {
+    "revision": "6f48cee37429a0e662a5e90ec7abc4e2",
+    "url": "/static/media/talks.6f48cee3.svg"
   }
 ]);

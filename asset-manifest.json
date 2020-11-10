@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.694fe129.chunk.css",
-    "main.js": "/static/js/main.cbcb1e3f.chunk.js",
-    "main.js.map": "/static/js/main.cbcb1e3f.chunk.js.map",
+    "main.js": "/static/js/main.05b19129.chunk.js",
+    "main.js.map": "/static/js/main.05b19129.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.547873b7.js",
     "runtime-main.js.map": "/static/js/runtime-main.547873b7.js.map",
     "static/js/2.c1a079ba.chunk.js": "/static/js/2.c1a079ba.chunk.js",
     "static/js/2.c1a079ba.chunk.js.map": "/static/js/2.c1a079ba.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.31d7d4a1109f2d5075bdbbea4ac79967.js": "/precache-manifest.31d7d4a1109f2d5075bdbbea4ac79967.js",
+    "precache-manifest.b3f4cdaf8c314279709133b9dc8aad39.js": "/precache-manifest.b3f4cdaf8c314279709133b9dc8aad39.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.694fe129.chunk.css.map": "/static/css/main.694fe129.chunk.css.map",
     "static/js/2.c1a079ba.chunk.js.LICENSE.txt": "/static/js/2.c1a079ba.chunk.js.LICENSE.txt",
-    "static/media/account.svg": "/static/media/account.41089b2f.svg",
     "static/media/code-tags.svg": "/static/media/code-tags.c30c2138.svg",
     "static/media/home.svg": "/static/media/home.0c07127c.svg",
     "static/media/icon_github.svg": "/static/media/icon_github.0b4bec49.svg",
@@ -20,13 +19,17 @@
     "static/media/icon_twitter.svg": "/static/media/icon_twitter.98fbad94.svg",
     "static/media/menu.svg": "/static/media/menu.fe6be280.svg",
     "static/media/pen.svg": "/static/media/pen.7bb49de9.svg",
+    "static/media/podcast1.jpg": "/static/media/podcast1.7663d4b5.jpg",
+    "static/media/podcast2.png": "/static/media/podcast2.cc532e2e.png",
+    "static/media/podcasts.svg": "/static/media/podcasts.58e127e9.svg",
     "static/media/talk1.png": "/static/media/talk1.3480e592.png",
-    "static/media/talk2.png": "/static/media/talk2.c07dff77.png"
+    "static/media/talk2.png": "/static/media/talk2.c07dff77.png",
+    "static/media/talks.svg": "/static/media/talks.6f48cee3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.547873b7.js",
     "static/js/2.c1a079ba.chunk.js",
     "static/css/main.694fe129.chunk.css",
-    "static/js/main.cbcb1e3f.chunk.js"
+    "static/js/main.05b19129.chunk.js"
   ]
 }
