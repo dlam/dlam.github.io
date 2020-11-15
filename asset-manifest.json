@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.04cce932.chunk.css",
-    "main.js": "/static/js/main.f78f1c77.chunk.js",
-    "main.js.map": "/static/js/main.f78f1c77.chunk.js.map",
+    "main.js": "/static/js/main.3ffdb12a.chunk.js",
+    "main.js.map": "/static/js/main.3ffdb12a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.547873b7.js",
     "runtime-main.js.map": "/static/js/runtime-main.547873b7.js.map",
     "static/js/2.c1a079ba.chunk.js": "/static/js/2.c1a079ba.chunk.js",
     "static/js/2.c1a079ba.chunk.js.map": "/static/js/2.c1a079ba.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5dde0e54935df3f536c20bc5b9299500.js": "/precache-manifest.5dde0e54935df3f536c20bc5b9299500.js",
+    "precache-manifest.538da73b5437abebe38c2db6f55c3517.js": "/precache-manifest.538da73b5437abebe38c2db6f55c3517.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.04cce932.chunk.css.map": "/static/css/main.04cce932.chunk.css.map",
     "static/js/2.c1a079ba.chunk.js.LICENSE.txt": "/static/js/2.c1a079ba.chunk.js.LICENSE.txt",
@@ -23,13 +23,14 @@
     "static/media/podcast2.png": "/static/media/podcast2.cc532e2e.png",
     "static/media/podcasts.svg": "/static/media/podcasts.58e127e9.svg",
     "static/media/talk1.png": "/static/media/talk1.3480e592.png",
-    "static/media/talk2.png": "/static/media/talk2.c07dff77.png",
+    "static/media/talk2.png": "/static/media/talk2.43deb7a8.png",
+    "static/media/talk3.png": "/static/media/talk3.c07dff77.png",
     "static/media/talks.svg": "/static/media/talks.6f48cee3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.547873b7.js",
     "static/js/2.c1a079ba.chunk.js",
     "static/css/main.04cce932.chunk.css",
-    "static/js/main.f78f1c77.chunk.js"
+    "static/js/main.3ffdb12a.chunk.js"
   ]
 }
