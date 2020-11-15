@@ -14,7 +14,7 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 const talks: Article[] = [
   {
     "url": "https://www.youtube.com/watch?v=yszRpGp3ijI",
-    "img": "talk2.png",
+    "img": "talk3.png",
     "title": "Fighting Regressions with Benchmarks in CI (extended)",
     "date": "November 2019",
     "content": "Droidcon Toronto '19, Toronto, ON"
