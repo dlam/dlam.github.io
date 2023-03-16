@@ -45,7 +45,7 @@ const podcasts: Article[] = [
   },
   {
     "url": "http://androidbackstage.blogspot.com/2019/09/episode-121-benchmarking.html",
-    "img": "podcast1.jpg",
+    "img": "podcast1.png",
     "title": "ADB Episode 121: Benchmarking",
     "date": "September 2019",
     "content": "In this episode, we chat with Chris Craik and Dustin Lam from the AndroidX team about benchmarking"
