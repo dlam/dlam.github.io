@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.b571f2ea.css",
-    "main.js": "/static/js/main.65fb14b7.js",
+    "main.js": "/static/js/main.3d3b4560.js",
     "static/media/podcast1.png": "/static/media/podcast1.c131d6773654ccca06c4.png",
     "static/media/podcast2.png": "/static/media/podcast2.b01ecf7665c0272a34f3.png",
     "static/media/talk3.png": "/static/media/talk3.185285ba9f84cb650269.png",
     "static/media/talk1.png": "/static/media/talk1.1d136cbc7f6a1d6b01ce.png",
     "static/media/talk2.png": "/static/media/talk2.a0be5c60a61a0b302a9c.png",
+    "static/media/talk4.png": "/static/media/talk4.fa2c7105c6e2f175a339.png",
     "static/media/icon_github.svg": "/static/media/icon_github.30fe2d7954a0b943a6f8e46ca64df61a.svg",
     "static/media/icon_linkedin.svg": "/static/media/icon_linkedin.5630c05b28c5c9645475ca162e7e2b19.svg",
     "static/media/icon_twitter.svg": "/static/media/icon_twitter.f2025b7490a68ab49ce08ddec793a65c.svg",
@@ -18,10 +19,10 @@
     "static/media/podcasts.svg": "/static/media/podcasts.4396e88457a9eab18c8f88f9b216d507.svg",
     "static/media/talks.svg": "/static/media/talks.06e9f2693756479fae6aa57f3f0f9db2.svg",
     "main.b571f2ea.css.map": "/static/css/main.b571f2ea.css.map",
-    "main.65fb14b7.js.map": "/static/js/main.65fb14b7.js.map"
+    "main.3d3b4560.js.map": "/static/js/main.3d3b4560.js.map"
   },
   "entrypoints": [
     "static/css/main.b571f2ea.css",
-    "static/js/main.65fb14b7.js"
+    "static/js/main.3d3b4560.js"
   ]
 }
