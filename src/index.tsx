@@ -13,6 +13,13 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 
 const talks: Article[] = [
   {
+    "url": "https://www.youtube.com/watch?v=03T-ARIo0t8",
+    "img": "talk4.png",
+    "title": "Kotlin Multiplatform conversions at Android Jetpack scale",
+    "date": "April 2023",
+    "content": "KotlinConf '23, Amsterdam, NL"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=yszRpGp3ijI",
     "img": "talk3.png",
     "title": "Fighting Regressions with Benchmarks in CI (extended)",
@@ -32,7 +39,7 @@ const talks: Article[] = [
     "title": "Improving App Performance with Benchmarking",
     "date": "May 2019",
     "content": "Google I/O '19, Mountain View, CA"
-  }
+  },
 ]
 
 const podcasts: Article[] = [
