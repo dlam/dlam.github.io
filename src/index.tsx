@@ -13,7 +13,7 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 
 const talks: Article[] = [
   {
-    "url": "https://www.youtube.com/watch?v=03T-ARIo0t8",
+    "url": "https://www.youtube.com/watch?v=PbwFtqmbMuI",
     "img": "talk4.png",
     "title": "Kotlin Multiplatform conversions at Android Jetpack scale",
     "date": "April 2023",
