@@ -13,6 +13,13 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 
 const talks: Article[] = [
   {
+    "url": "https://www.youtube.com/watch?v=gP5Y-ct6QXI",
+    "img": "talk5.png",
+    "title": "Demystify KMP builds and structure",
+    "date": "May 2025",
+    "content": "Google I/O '25"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=PbwFtqmbMuI",
     "img": "talk4.png",
     "title": "Kotlin Multiplatform conversions at Android Jetpack scale",
@@ -43,6 +50,13 @@ const talks: Article[] = [
 ]
 
 const podcasts: Article[] = [
+  {
+    "url": "https://adbackstage.libsyn.com/kotlin-multiplatform-have-your-code-and-eat-it-too",
+    "img": "podcast3.png",
+    "title": "Kotlin Multiplatform: Have your code and eat it too",
+    "date": "May 2025",
+    "content": "Software Engineers Dustin Lam and Yigit Boyar join host Tor Norbye to chat all about Kotlin Multiplatform"
+  },
   {
     "url": "http://androidbackstage.blogspot.com/2020/10/episode-151-paging3.html",
     "img": "podcast2.png",

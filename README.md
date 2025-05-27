@@ -1,0 +1,1 @@
+`magick <input> -geometry 420x -colors 255 -alpha off -define filter:support=2 -quality 75 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -colorspace sRGB <output>.png`
